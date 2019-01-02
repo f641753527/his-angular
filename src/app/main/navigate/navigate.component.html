@@ -1,0 +1,9 @@
+<div class="navigator">
+  <ul nz-menu [nzMode]="'horizontal'" nzTheme='dark' class="main-menu">
+    <li nz-menu-item *ngFor="let menu of modules" [routerLink]="['/navigator', menu.path]" routerLinkActive="active">{{menu.name}}</li>
+  </ul>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+  

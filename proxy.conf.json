@@ -1,0 +1,6 @@
+{
+  "/service": {
+    "target": "https://his.aokaoyun.com/",
+    "changeOrigin": true
+  }
+}

@@ -1,0 +1,28 @@
+@import '../../../theme.less';
+.navigator{
+  height: 100%;
+  .main-menu{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    line-height: 60px;
+    background: @color-mask-bg;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    .ant-menu-item{
+      outline: none;
+      &.ant-menu-item-selected{
+        background: transparent;
+        border-width: 0;
+      }
+      &.active{
+        background: @color-main;
+      }
+    }
+  }
+  .content{
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+  }
+}

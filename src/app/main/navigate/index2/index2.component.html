@@ -1,0 +1,27 @@
+<div>
+  <!-- 登记挂号 -->
+  <app-regist *ngIf="module_i ===0 && menu_i === 0"></app-regist>
+  <app-regist *ngIf="module_i ===0 && menu_i === 1"></app-regist>
+
+  <!-- 医生站 -->
+  <app-doctor *ngIf="module_i ===1 && menu_i === 0"></app-doctor>
+
+  <!-- 收费发药 -->
+  <app-charge *ngIf="module_i ===2 && menu_i === 0"></app-charge>
+
+  <!-- 药品库房 -->
+  <app-drug *ngIf="module_i ===3 && menu_i === 0"></app-drug>
+
+  <!-- 模板管理 -->
+  <app-template *ngIf="module_i ===4 && menu_i === 0"></app-template>
+
+  <!-- 客户管理 -->
+  <app-customers *ngIf="module_i ===5 && menu_i === 0"></app-customers>
+
+  <!-- 统计查询 -->
+  <app-statistics *ngIf="module_i ===6 && menu_i === 0"></app-statistics>
+
+  <!-- 诊所管理 -->
+  <app-settings *ngIf="module_i ===7 && menu_i === 0"></app-settings>
+
+</div>

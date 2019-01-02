@@ -1,0 +1,11 @@
+<div class="admin">
+  <ul nz-menu [nzMode]="'inline'" class="menu">
+    <li nz-menu-item nz-tooltip routerLink="list" routerLinkActive="active-menu">
+      <span><i nz-icon type="mail"></i><span>诊所列表</span></span>
+    </li>
+    <li nz-menu-item nz-tooltip routerLink="info" routerLinkActive="active-menu"><span><i nz-icon type="mail"></i><span>个人信息</span></span></li>
+  </ul>
+  <div class="view">
+    <router-outlet></router-outlet>
+  </div>
+</div>

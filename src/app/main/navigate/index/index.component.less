@@ -1,0 +1,24 @@
+
+@import '../../../../theme.less';
+
+.main-content{
+  display: flex;
+  min-height: 100%;
+  .left{
+    flex: 0 0 160px;
+    .menus{
+      height: 100%;
+      .ant-menu-item{
+        outline: none;
+        margin: 0;
+        &.active{
+          background: @color-main;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .right {
+    flex: 1 1 auto;
+  }
+}

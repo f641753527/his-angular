@@ -1,0 +1,19 @@
+<div class="clinic_list" nz-row [nzGutter]='{ xs: 8, sm: 16, md: 24, lg: 32, xl: 32, xxl: 32 }'>
+  <div class="clinic" nz-col nzXs="24" nzSm="12" nzMd="12" nzLg="8" nzXl="4">
+    <nz-card nzHoverable [nzCover]="coverTemplate">
+      <nz-card-meta nzTitle="添加新诊所" nzDescription="1"></nz-card-meta>
+    </nz-card>
+    <ng-template #coverTemplate>
+      <img alt="example" src="http://p4.so.qhmsg.com/bdr/1080__/t013213f30f7a50af19.jpg"/>
+    </ng-template>
+  </div>
+
+  <div class="clinic" (click)="change_clinic(clinic.clinic_id)" *ngFor="let clinic of clinic_list" nz-col nzXs="24" nzSm="12" nzMd="12" nzLg="8" nzXl="4">
+    <nz-card nzHoverable [nzCover]="coverTemplate">
+      <nz-card-meta [nzTitle]="clinic?.name" [nzDescription]="clinic?.address"></nz-card-meta>
+    </nz-card>
+    <ng-template #coverTemplate>
+      <img alt="example" src="http://p4.so.qhmsg.com/bdr/1080__/t013213f30f7a50af19.jpg"/>
+    </ng-template>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="main-content">
+  <div class="left">
+    <ul nz-menu [nzMode]="'inline'" class="menus">
+      <li nz-menu-item nz-tooltip (click)="cur_menu=menu.path" [ngClass]="{'active': cur_menu === menu.path }" [routerLink]="[menu.path]" 
+        *ngFor="let menu of menus">{{menu.name}}</li>
+    </ul>
+  </div>
+  <div class="right">
+    <router-outlet></router-outlet>
+  </div>
+</div>
